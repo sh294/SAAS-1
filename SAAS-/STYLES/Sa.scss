@@ -1,0 +1,76 @@
+//browser reset code
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+//color variable declaretions
+$container-bgcolor:#808080;
+$header-bgcolor:#ffffff;
+$footer-bgcolor:#686de0;
+$para-fontsize:30px;
+
+
+.container{
+    background: $container-bgcolor;
+    width: 500px;
+    height: 700px;
+    margin: 30px auto;
+    padding: 30px;
+}
+header{
+    width: 450px;
+    height: 450px;
+    background-color: $header-bgcolor;
+    padding: 30px;
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+
+}
+header p{
+    font-size: $para-fontsize;
+    color: $container-bgcolor;
+    line-height: 1.3em;
+
+}
+.Image{
+    width: 140px;
+    height: 160px;
+    border: 4px solid $header-bgcolor;
+    border-radius: 50%;
+    margin: 20px 120px;
+    position: absolute;
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: 200px;
+    background-color: $footer-bgcolor;
+    box-sizing: border-box;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+ h3{
+    
+    color: $header-bgcolor;
+    
+    font-size: 25px
+
+}
+h4{
+    color: rgb(160, 151, 127);
+    font-size: 25px;
+    margin: 5px;
+}
+@media screen and (max-width:400px){
+    h4{
+    
+        font-size: 20px;
+    }
+}
